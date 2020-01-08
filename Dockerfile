@@ -3,17 +3,24 @@ ARG REPO_NAME="dt-http-proxy"
 
 ARG ARCH=arm32v7
 ARG MAJOR=ente
-ARG BASE_TAG=alpine
+ARG BASE_TAG=1.17.0
 ARG BASE_IMAGE=nginx
 
 # define base image
-FROM ${BASE_IMAGE}:${BASE_TAG}
+FROM ${ARCH}/${BASE_IMAGE}:${BASE_TAG}
 
-# clear ngingx configuration
-RUN rm /etc/nginx/conf.d/default.conf
+# configure environment
+ARG ARCH
+ARG MAJOR
+ARG BASE_TAG
+ARG BASE_IMAGE
+ARG REPO_NAME
+
+# copy QEMU
+COPY ./assets/qemu/${ARCH}/ /usr/bin/
 
 # apply custom configuration
-COPY proxy.conf /etc/nginx/conf.d/proxy.conf
+COPY assets/proxy.conf /etc/nginx/conf.d/default.conf
 
 # store module name
 LABEL org.duckietown.label.module.type "${REPO_NAME}"

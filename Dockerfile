@@ -1,5 +1,5 @@
 # parameters
-ARG REPO_NAME="dt-http-proxy"
+ARG REPO_NAME="dt-device-proxy"
 
 ARG ARCH=arm32v7
 ARG MAJOR=ente

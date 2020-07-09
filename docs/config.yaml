@@ -1,7 +1,7 @@
 docs_config_version: v1
 
 # CONFIGURE THESE TO MATCH YOUR PROJECT:
-project: "dt-device-online"
+project: "dt-device-proxy"
 copyright: "Duckietown"
 author: "Andrea F. Daniele (afdaniele@ttic.edu)"
 version: "daffy"

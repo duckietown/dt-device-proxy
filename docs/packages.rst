@@ -71,6 +71,14 @@ Available on the TCP port ``8085`` it is proxied to the URL
 ``http://HOSTNAME/health/`` (shortcut ``http://HOSTNAME/h/``).
 
 
+dt-code-api
+~~~~~~~~~~~
+
+Module providing an easy way of receiving OTA updates.
+Available on the TCP port ``8086`` it is proxied to the URL
+``http://HOSTNAME/code/`` (shortcut ``http://HOSTNAME/c/``).
+
+
 portainer
 ~~~~~~~~~
 

@@ -79,6 +79,15 @@ Available on the TCP port ``8086`` it is proxied to the URL
 ``http://HOSTNAME/code/`` (shortcut ``http://HOSTNAME/c/``).
 
 
+dt-gui-tools
+~~~~~~~~~~~~
+
+Module providing an LXDE (Lightweight X11 Desktop Environment)
+through a VNC tunnel on the TCP port ``8087``.
+It is proxied to the URL ``http://HOSTNAME/desktop/``
+(shortcut ``http://HOSTNAME/x/``).
+
+
 portainer
 ~~~~~~~~~
 
